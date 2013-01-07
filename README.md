@@ -21,15 +21,20 @@ A simple SCSS grid framework.
 ### Markup
 
 	<div class="grid">
+
 	  <div class="row">
+
 	    <div class="site-header">...</div>
-	  </div>
-	  <div class="row">
-	    <div class="site-nav">...</div>
-	    <div class="site-content">...</div>
+
 	  </div>
 
-## License
+	  <div class="row">
+
+	    <div class="site-nav">...</div>
+
+	    <div class="site-content">...</div>
+
+	  </div>
 
 ## License
 
