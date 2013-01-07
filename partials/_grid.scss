@@ -1,0 +1,26 @@
+//
+// Partials
+//
+
+/* Grid */
+.grid {
+  max-width: 1140px;
+     margin: 0 auto;
+}
+
+/* Row */
+.row {
+
+  &:before, &:after {
+     content: "\0020";
+     display: block;
+      height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+

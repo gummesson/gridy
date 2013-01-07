@@ -1,0 +1,28 @@
+//
+// Mixins
+//
+
+// Columns
+@mixin columns($columns, $last) {
+
+  float     : left;
+  min-height: 1px;
+
+  @if $last == true {
+    width       : 100% * ($columns / $grid-columns_total);
+    margin-right: 0;
+  }
+
+  @else {
+    width       : 100% * ($columns / $grid-columns_total) - $grid-gutter_width;
+    margin-right: $grid-gutter_width;
+  }
+
+}
+
+// Units
+@mixin units($units) {
+  float     : left;
+  min-height: 1px;
+  width     : 100% * ($units / $grid-units_total);
+}
