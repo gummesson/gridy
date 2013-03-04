@@ -1,20 +1,22 @@
-//
-// Partials
-//
+//------------
+//  Partials
+//------------
 
 /* Grid */
+
 .grid {
-  max-width: $grid-container_width;
-  margin   : 0 auto;
+  max-width: $grid-container-width;
+  margin: 0 auto;
 }
 
 /* Row */
+
 .row {
 
   &:before, &:after {
-    content : "\0020";
-    display : block;
-    height  : 0;
+    content: "\0020";
+    display: block;
+    height: 0;
     overflow: hidden;
   }
 
@@ -23,4 +25,3 @@
   }
 
 }
-

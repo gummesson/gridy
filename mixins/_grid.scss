@@ -1,28 +1,28 @@
-//
-// Mixins
-//
+//----------
+//  Mixins
+//----------
 
 // Columns
 @mixin columns($columns, $last) {
 
-  float     : left;
+  float: left;
   min-height: 1px;
 
   @if $last == true {
-    width       : 100% * ($columns / $grid-columns_total);
+    width: 100% * ($columns / $grid-columns-total);
     margin-right: 0;
   }
 
   @else {
-    width       : 100% * ($columns / $grid-columns_total) - $grid-gutter_width;
-    margin-right: $grid-gutter_width;
+    width: 100% * ($columns / $grid-columns-total) - $grid-gutter-width;
+    margin-right: $grid-gutter-width;
   }
 
 }
 
 // Units
 @mixin units($units) {
-  float     : left;
+  float: left;
   min-height: 1px;
-  width     : 100% * ($units / $grid-units_total);
+  width: 100% * ($units / $grid-units-total);
 }
